@@ -1,0 +1,183 @@
+        /* NEW CSS --> CUSTOM  */
+        
+        @media only screen and (max-max-width: 767px) {
+            .hidden-sm {
+                display: none !important;
+            }
+        }
+        
+        @media only screen and (max-max-width:500px) {
+            .hidden-xs {
+                display: none !important;
+            }
+        }
+        /*Padding & Margin setups*/
+        
+        .padd0 {
+            padding: 0px;
+        }
+        
+        .paddT0 {
+            padding-top: 0px;
+        }
+        
+        .paddT5 {
+            padding-top: 5px;
+        }
+        
+        .paddT10 {
+            padding-top: 10px;
+        }
+        
+        .paddT15 {
+            padding-top: 15px;
+        }
+        
+        .paddT20 {
+            padding-top: 20px;
+        }
+        
+        .paddL0 {
+            padding-left: 0px;
+        }
+        
+        .paddL5 {
+            padding-left: 5px;
+        }
+        
+        .paddL10 {
+            padding-left: 10px;
+        }
+        
+        .paddL15 {
+            padding-left: 15px;
+        }
+        
+        .paddL20 {
+            padding-left: 20px;
+        }
+        
+        .paddR0 {
+            padding-right: 0px;
+        }
+        
+        .paddR5 {
+            padding-right: 5px;
+        }
+        
+        .paddR10 {
+            padding-right: 10px;
+        }
+        
+        .paddR15 {
+            padding-right: 15px;
+        }
+        
+        .paddR20 {
+            padding-right: 20px;
+        }
+        
+        .paddB0 {
+            padding-bottom: 0px;
+        }
+        
+        .paddB5 {
+            padding-bottom: 5px;
+        }
+        
+        .paddB10 {
+            padding-bottom: 10px;
+        }
+        
+        .paddB15 {
+            padding-bottom: 15px;
+        }
+        
+        .paddB20 {
+            padding-bottom: 20px;
+        }
+        
+        .marg0 {
+            margin: 0px;
+        }
+        
+        .margT0 {
+            margin-top: 0px;
+        }
+        
+        .margT5 {
+            margin-top: 5px;
+        }
+        
+        .margT10 {
+            margin-top: 10px;
+        }
+        
+        .margT15 {
+            margin-top: 15px;
+        }
+        
+        .margT20 {
+            margin-top: 20px;
+        }
+        
+        .margB0 {
+            margin-bottom: 0px;
+        }
+        
+        .margB5 {
+            margin-bottom: 5px;
+        }
+        
+        .margB10 {
+            margin-bottom: 10px;
+        }
+        
+        .margB15 {
+            margin-bottom: 15px;
+        }
+        
+        .margB20 {
+            margin-bottom: 20px;
+        }
+        
+        .margL0 {
+            margin-left: 0px;
+        }
+        
+        .margL5 {
+            margin-left: 5px;
+        }
+        
+        .margL10 {
+            margin-left: 10px;
+        }
+        
+        .margL15 {
+            margin-left: 15px;
+        }
+        
+        .margL20 {
+            margin-left: 20px;
+        }
+        
+        .margR0 {
+            margin-right: 0px;
+        }
+        
+        .margR5 {
+            margin-right: 5px;
+        }
+        
+        .margR10 {
+            margin-right: 10px;
+        }
+        
+        .margR15 {
+            margin-right: 15px;
+        }
+        
+        .margR20 {
+            margin-right: 20px;
+        }
+        /*END OF PADDING & MARGIN SETUP*/
