@@ -21,3 +21,30 @@ console.log(arr[0]);
 // var link = 'www.example.com/training/product.html';
 // link.split('.html')[0];
 // window.history.replaceState(null, null, link);
+
+//Contact Us - Form Validator ------------------------------------------------------------------
+// $("#myform").validate({
+//     rules: {
+//         name: {
+//             required: true,
+//             minlength: 2
+//         }
+//     },
+//     messages: {
+//         name: {
+//             required: "We need your email address to contact you",
+//             minlength: jQuery.validator.format("At least {0} characters required!")
+//         }
+//     }
+// });
+// $("#myform").validate({
+//     success: function(label) {
+//         label.addClass("valid").text("Ok!")
+//     },
+//     submitHandler: function(form) {
+//         // do other things for a valid form
+//         form.submit();
+//         alert("Submitted!");
+//     }
+// });
+//----------------------------------------------------------------------------------------------

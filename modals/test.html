@@ -1,57 +1,201 @@
-<script src="https://code.jquery.com/jquery-3.2.1.js "></script>
-<script>
-    $(document).ready(function() {
-        var includes = $('[data-include]');
-        jQuery.each(includes, function() {
-            var file = '../layout/' + $(this).data('include') + '.html';
-            $(this).load(file);
-        });
-    });
-</script>
-<div data-include="header">
-</div>
-<!--CONTACT ME FORM --DESKTOP-->
-<div id="contactme" style="max-height:94vh;padding-top:100px;padding-bottom:170px;" class="col-md-12 col-lg-12 contactme-form d-none d-lg-block paddB10">
-    <div class="col-md-1 col-lg-1 col-xl-2"></div>
-    <div class="col-md-10 col-lg-10 col-xl-8 d-inline-flex" style="height:80vh">
-        <div class=" col-sm-12 col-md-6 col-lg-7  col-xl-8" style="margin-top:50px;">
-            <p class="modern-white OpenSansSemiBold ">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-            </p>
-            <p class="modern-white OpenSansSemiBold ">
-                <strong class="paddR5"><i class="far fa-envelope-open"></i> </strong>abc@abc.com <br>
-                <strong class="paddR5"><i class="far fa-address-book"></i> </strong>+(60)123456789
-            </p>
-            <form action="https://formspree.io/projectdon.dev@gmail.com" method="POST">
-                <div class="form-group">
-                    <input placeholder="Name" type="text" class="form-control contactme-form-input " value="" name="name">
-                </div>
-                <div class="form-group">
-                    <input placeholder="Email Address" type="email" class="form-control contactme-form-input " value="" name="email">
-                </div>
-                <div class="form-group">
-                    <input placeholder="Contact Number" type="number" class="form-control contactme-form-input " value="" name="contact">
-                </div>
-                <div class="form-group">
-                    <textarea rows="6" placeholder="Enter Message here" class="form-control contactme-form-input " name="message">
-                                    </textarea>
-                </div>
+<!DOCTYPE html>
+<html>
 
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="padding: 5px 0px;">
-                    <button type="submit" class="btn btn-dark paddR0 OpenSansSemiBold" style="font-size: 16px;height: 40px;width: 150px;" name="submit">Contact Us
-                                    </button>
-                </div>
-            </form>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/models.css" type="text/css" />
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            background: #ccc;
+        }
+        
+        .mySlides {
+            display: none
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Caption text */
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade" style="text-align:center;">
+            <div class="numbertext">1 / 3</div>
+            <img style="object-fit: cover;height:100vh;" src="../assets/img/models/Jeslinda/1.jpg" class="modal_image_carousel " alt="Image1">
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4" style="">
-            <h1 class="modern-white OpenSansSemiBold" style="text-align: center">
-                Contact Us
-            </h1>
 
-            <img src="assets/img/stock-potrait.jpg" style="height: 60vh;" class="img img-responsive" />
+        <div class="mySlides fade" style="text-align:center;">
+            <div class="numbertext">2 / 3</div>
+            <img style="object-fit: cover;height:100vh;" src="../assets/img/models/Jeslinda/2.jpg" class="modal_image_rotate_left modal_image_carousel " alt="Image1">
         </div>
 
+        <div class="mySlides fade" style="text-align:center;">
+            <div class="numbertext">3 / 3</div>
+            <img style="object-fit: cover;height:100vh;" src="../assets/img/models/Jeslinda/3.jpg" class="modal_image_carousel " alt="Image1">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
-    <div class=" col-md-1 col-lg-1 col-xl-2"></div>
-</div>
-<div data-include="footer"></div>
+    <br>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

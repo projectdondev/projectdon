@@ -1,0 +1,26 @@
+{
+  "short_name": "Project Don",
+  "name": "Project Don Management",
+  "icons": [
+    {
+      "src": "assets/img/common/favicon.ico",
+      "type": "icon/ico",
+      "sizes": "48x48"
+    },
+    {
+       "src": "assets/img/common/favicon.ico",
+      "type": "icon/ico",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/img/common/favicon.ico",
+      "type": "icon/ico",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "background_color" : "#232b2b",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#232b2b"
+}

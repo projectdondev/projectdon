@@ -1,0 +1,128 @@
+/* MODEL DETAIL QUOTE AREA ------------------------------------------------------- */
+
+blockquote {
+    font-size: 1.4em;
+    width: 100%;
+    margin: 50px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78C0A8;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote::after {
+    content: '';
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+
+/* MODALS DETAIL ---------------------------------------------- */
+
+.modal_mainframe_box {
+    height: 300px;
+    /* width: 50px; */
+    margin: 30px 20px;
+    background: grey;
+    display: inline-flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal_mainframe_box:hover {
+    transform: scale(1.2);
+    z-index: 999;
+}
+
+.model-profile-picture {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.modal_detail_title {
+    border-bottom: 1px solid #ccc;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal_detail_text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ccc;
+    font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal_detail_summary {
+    word-break: break-word;
+    text-align: end;
+    margin: 10px 20px;
+    color: bisque;
+}
+
+.model_description_group {
+    display: flex;
+    padding: 0px;
+}
+
+.modal_image_carousel {
+    text-align: center;
+    /* width: 500px; */
+    height: 100vh;
+    margin: auto;
+    object-fit: scale-down !important;
+    object-position: center;
+}
+
+.modal_image_carousel_landing {
+    text-align: center;
+    /* width: 500px; */
+    height: 100vh;
+    margin: auto;
+    object-fit: cover !important;
+    object-position: center;
+}
+
+.modal_image_rotate_left {
+    transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+
+.modal_image_rotate_right {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.carousel-inner {
+    background: #022e3a;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
