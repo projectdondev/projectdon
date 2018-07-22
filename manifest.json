@@ -4,33 +4,37 @@
   "icons": [
     {
       "src": "assets/img/common/logo2/48.png",
-      "type": "icon/png",
+      "type": "image/png",
       "sizes": "48x48"
     },
     {
      "src": "assets/img/common/logo2/96.png",
-      "type": "icon/png",
+      "type": "image/png",
       "sizes": "96x96"
     },
     {
        "src": "assets/img/common/logo2/128.png",
-      "type": "icon/png",
+      "type": "image/png",
       "sizes": "192x192"
     },
 	 {
        "src": "assets/img/common/logo2/256.png",
-      "type": "icon/png",
+      "type": "image/png",
       "sizes": "256x256"
     },
 	 {
       "src": "assets/img/common/logo2/512.png",
-      "type": "icon/png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "index.html?launcher=true",
+  "start_url": "https://projectdonmanagement.com",
   "background_color" : "#232b2b",
   "display": "standalone",
-  "orientation": "portrait",
   "theme_color": "#232b2b"
+  "orientation": "portrait-primary",
+  "description": "Malaysia first talent and modelling agency that works with and casts Differently-Abled and Unique models.",
+  "dir": "auto",
+  "lang": "en-US",
+  "prefer_related_applications": false 
 }
