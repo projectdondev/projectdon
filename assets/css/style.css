@@ -89,6 +89,21 @@ h1.ml8 {
     background-position: center;
 }
 
+.content-text-ul {
+    list-style-type: disc;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #d44057;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    color: whitesmoke;
+    background: #0e0e0ed9;
+}
+
+.content-text-ul>li {
+    margin-left: 20px;
+}
+
 .title-font {
     font-family: 'Courgette', 'cursive';
     font-weight: 400;

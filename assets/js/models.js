@@ -20,8 +20,8 @@ function triggerModalDetails(id) {
             modelTarget = "modals/bernard.html";
             $('#modal').iziModal('open');
             return 0;
-        case "jeslinda-paul":
-            modelTarget = "modals/jeslinda-paul.html";
+        case "jeslinda":
+            modelTarget = "modals/jeslinda.html";
             $('#modal').iziModal('open');
             return 0;
         case "marsya":
@@ -35,10 +35,13 @@ function triggerModalDetails(id) {
     }
 }
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 $("#modal").iziModal({
-    title: 'Model',
+    title: '',
     subtitle: '',
-    headerColor: 'green',
+    headerColor: '#4c9cb8',
     background: null,
     theme: '', // light
     icon: null,
@@ -92,6 +95,7 @@ $("#modal").iziModal({
         modal.startLoading();
         $.get(modelTarget, function(data) {
             $("#modal .iziModal-content").html(data);
+            $('#modal').iziModal('setTitle', capitalizeFirstLetter(getModelName));
             modal.stopLoading();
         });
     }
