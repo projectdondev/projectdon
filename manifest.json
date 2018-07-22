@@ -1,40 +1,39 @@
 {
-  "short_name": "Project DON",
-  "name": "Project DON Management",
-  "icons": [
-    {
-      "src": "assets/img/common/logo2/48.png",
-      "type": "image/png",
-      "sizes": "48x48"
-    },
-    {
-     "src": "assets/img/common/logo2/96.png",
-      "type": "image/png",
-      "sizes": "96x96"
-    },
-    {
-       "src": "assets/img/common/logo2/128.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-	 {
-       "src": "assets/img/common/logo2/256.png",
-      "type": "image/png",
-      "sizes": "256x256"
-    },
-	 {
-      "src": "assets/img/common/logo2/512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "https://projectdonmanagement.com",
-  "background_color" : "#232b2b",
-  "display": "standalone",
-  "theme_color": "#232b2b"
-  "orientation": "portrait-primary",
-  "description": "Malaysia first talent and modelling agency that works with and casts Differently-Abled and Unique models.",
-  "dir": "auto",
-  "lang": "en-US",
-  "prefer_related_applications": false 
+    "short_name": "Project DON",
+    "name": "Project DON Management",
+    "icons": [{
+            "src": "assets/img/common/logo2/48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "assets/img/common/logo2/96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "assets/img/common/logo2/128.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/img/common/logo2/256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "assets/img/common/logo2/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "https://projectdonmanagement.com",
+    "background_color": "#232b2b",
+    "display": "standalone",
+    "theme_color": "#232b2b",
+    "orientation": "portrait-primary",
+    "description": "Malaysia first talent and modelling agency that works with and casts Differently-Abled and Unique models.",
+    "dir": "auto",
+    "lang": "en-US",
+    "prefer_related_applications": false
 }

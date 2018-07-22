@@ -17,10 +17,26 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="assets/js/layout.js"></script>
+    <script>
+        var contentLoaderStart;
+
+        function loaderInitiate() {
+            console.log("initiate loader turn off 3secs");
+            contentLoaderStart = setTimeout(loadPage, 500);
+        }
+
+        function loadPage() {
+            document.getElementById("loaderBody").classList.remove('loaderFormat');
+            document.getElementById("contentLoader").style.display = "none";
+            document.getElementById("contentLoaderComplete").style.display = "block";
+        }
+    </script>
 </head>
 
-<body>
-    <div>
+<body id="loaderBody" class="loaderFormat" onload="loaderInitiate()" style="margin:0;">
+    <div id="contentLoader" style=""></div>
+
+    <div style="display:none;" id="contentLoaderComplete" class="animate-bottom">
         <!-- HEADER START -->
         <div data-include="header"></div>
         <!--END HEADER -->
@@ -34,14 +50,14 @@
             <br/>
             <br/>
         </div>
-        <div id="contactme" style="min-height:94vh;padding-top:50px;padding-bottom:170px;" class="col-md-12 col-lg-12 contactme-form d-none d-lg-block paddB10">
+        <div id="contactme" style="min-height:94vh;padding-top:50px;padding-bottom: 186px;" class="col-md-12 col-lg-12 contactme-form d-none d-lg-block paddB10">
             <div class="col-md-1 col-lg-1 col-xl-2"></div>
-            <div class="col-md-10 col-lg-10 col-xl-8 d-inline-flex" style="height:80vh">
-                <div class=" col-sm-12 col-md-6 col-lg-7  col-xl-8">
-                    <p class="modern-white OpenSansSemiBold ">
+            <div class="col-md-10 col-lg-10 col-xl-8 d-inline-flex" style="">
+                <div class=" col-sm-12 col-md-6 col-lg-7  col-xl-8" style="border-top: 3px solid #efc814;border-bottom: 3px solid #efc814;">
+                    <p class="modern-white OpenSansSemiBold" style="margin-top:10px;">
                         You may contact us by submitting this form or alternatively by directly emailing us.
                     </p>
-                    <p class="modern-white OpenSansSemiBold ">
+                    <p class="modern-white OpenSansSemiBold">
                         <strong class="paddR5"><i class="fa fa-phone"></i>&nbsp;&nbsp;</strong>projectdonmanagement@gmail.com<br>
                         <strong class="paddR5"><i class="fa fa-address-book"></i> &nbsp;&nbsp;</strong>+(60)102266923
                     </p>
@@ -55,7 +71,7 @@
                         <div class="form-group">
                             <input placeholder="Contact Number" type="number" class="form-control contactme-form-input " value="" name="contact">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="margin-bottom:10px !important;">
                             <textarea rows="6" placeholder="Enter Message here" class="form-control contactme-form-input " name="message">
                                     </textarea>
                         </div>
@@ -77,9 +93,9 @@
         </div>
         <!--MOBILE -->
         <div class="col-12 contactme-form d-block d-lg-none">
-            <div class="col-12" style="top:50px;">
+            <div class="col-12" style="">
 
-                <div class="col-12 paddT20 paddB20" style="">
+                <div class="col-12 paddT20 paddB20" style="border-bottom: 3px solid #efc814;">
 
                     <p class="modern-white OpenSansSemiBold ">
                         You may contact us by submitting this form or alternatively by directly emailing us.

@@ -32,72 +32,105 @@
     <!-- SLICK IMAGE SLIDER -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        var contentLoaderStart;
+
+        function loaderInitiate() {
+            console.log("initiate loader turn off 3secs");
+            contentLoaderStart = setTimeout(loadPage, 500);
+        }
+
+        function loadPage() {
+            document.getElementById("loaderBody").classList.remove('loaderFormat');
+            document.getElementById("contentLoader").style.display = "none";
+            document.getElementById("contentLoaderComplete").style.display = "block";
+        }
+    </script>
     <style>
         .iziModal-content {
             background: #022e3a;
         }
+        
+        @media only screen and (min-width: 991px) and (max-width: 1200px) {
+            .col-lg-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 33% !important;
+            }
+        }
     </style>
+
 </head>
 
-<body>
-    <!-- HEADER START -->
-    <div data-include="header"></div>
-    <!--END HEADER -->
-    <!-- CONTENT GOES HERE -->
+<body id="loaderBody" class="loaderFormat" onload="loaderInitiate()" style="margin:0;">
+    <div id="contentLoader" style=""></div>
 
-    <div class="col-12 title-box" style="background: #4c9cb8;">
-        <h1 class="title-font">Models</h1>
-        <p class="content-title-small">
-            Browse through our models here
-        </p>
-        <br/>
-        <br/>
-    </div>
-    <!-- MAIN MODALS FRAME -->
-    <div class="container">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 margB20">
-            <!-- MODALS SECTION #1-->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-bottom: 3px solid #4c9cb8;">
-                <div id="amir" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 model-profile-picture_mobile modal_mainframe_box model-profile-picture" style="background-image: url('assets/img/models/Amir/1.jpg');">
+    <div style="display:none;" id="contentLoaderComplete" class="animate-bottom">
+        <!-- HEADER START -->
+        <div data-include="header"></div>
+        <!--END HEADER -->
+        <!-- CONTENT GOES HERE -->
 
-                </div>
-                <div id="azfar" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Azfar/2.jpg');">
-
-                </div>
-                <div id="bernard" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Bernard/5.jpg');">
-                </div>
-            </div>
-            <!-- MODALS SECTION #2-->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-bottom: 3px solid #4c9cb8;">
-                <div id="jeslinda" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Jeslinda/6.jpg');">
-
-                </div>
-                <div id="marsya" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Marsya/4.jpg');">
-
-                </div>
-                <div id="nadeera" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Nadeera/1.jpg');">
-                </div>
-            </div>
-            <!-- MODALS SECTION #3 -->
-            <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-bottom: 3px solid #4c9cb8;">
-                <div id="jeslinda-paul" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 modal_mainframe_box openBtn model-profile-picture">
-
-                </div>
-                <div id="jeslinda-paul" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 modal_mainframe_box openBtn model-profile-picture">
-
-                </div>
-                <div id="jeslinda-paul" onclick="triggerModalDetails(this.id)" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 modal_mainframe_box openBtn model-profile-picture">
-                </div>
-            </div> -->
+        <div class="col-12 title-box" style="background: #4c9cb8;">
+            <h1 class="title-font">Models</h1>
+            <p class="content-title-small">
+                Browse through our models here
+            </p>
+            <br/>
+            <br/>
         </div>
+        <!-- MAIN MODALS FRAME -->
+        <div class="container">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 margB20">
+                <!-- MODALS SECTION #1-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 main-model-section" style="">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mobile-border">
+                        <div id="amir" onclick="triggerModalDetails(this.id)" class="modal_mainframe_box model-profile-picture_mobile  model-profile-picture" style="background-image: url('assets/img/models/Amir/1.jpg');">
+                        </div>
+                        <p class="model-name">Amir Hamzah</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mobile-border">
+                        <div id="azfar" onclick="triggerModalDetails(this.id)" class="model-profile-picture_mobile modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Azfar/2.jpg');">
+
+                        </div>
+                        <p class="model-name">Azfar Firdaus</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mobile-border">
+                        <div id="bernard" onclick="triggerModalDetails(this.id)" class="model-profile-picture_mobile modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Bernard/5.jpg');">
+                        </div>
+                        <p class="model-name">Bernard Benzamin Nathan</p>
+                    </div>
+                </div>
+                <!-- MODALS SECTION #2-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 main-model-section" style="">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mobile-border">
+                        <div id="jeslinda" onclick="triggerModalDetails(this.id)" class="modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Jeslinda/6.jpg');">
+
+                        </div>
+                        <p class="model-name">Jeslinda Paul</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mobile-border">
+                        <div id="marsya" onclick="triggerModalDetails(this.id)" class="modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Marsya/4.jpg');">
+
+                        </div>
+                        <p class="model-name">Miza Marsya</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mobile-border">
+                        <div id="nadeera" onclick="triggerModalDetails(this.id)" class="model-profile-picture_mobile modal_mainframe_box openBtn model-profile-picture" style="background-image: url('assets/img/models/Nadeera/1.jpg');">
+                        </div>
+                        <p class="model-name">Nadeera K. Vasu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal structure -->
+        <div id="modal">
+            <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+            <!-- Modal content -->
+        </div>
+        <script src="assets/js/models.js"></script>
+        <!-- CONTENT END -->
+        <!-- FOOTER START-->
+        <div data-include="footer"></div>
+        <!-- FOOTER END-->
     </div>
-    <!-- Modal structure -->
-    <div id="modal">
-        <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
-        <!-- Modal content -->
-    </div>
-    <script src="assets/js/models.js"></script>
-    <!-- CONTENT END -->
-    <!-- FOOTER START-->
-    <div data-include="footer"></div>
-    <!-- FOOTER END-->

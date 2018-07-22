@@ -1,57 +1,90 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#232b2b">
-<link rel="shortcut icon" sizes="192x192" type="image/x-icon" href="assets/img/common/logo2/512.png" />
-<script src="https://code.jquery.com/jquery-3.2.1.js">
-</script>
-<script type="text/javascript" src="assets/js/layout.js"></script>
-<!-- HEADER START -->
-<div data-include="header" style="margin-bottom: 5vh;"></div>
-<!--END HEADER -->
-<!-- CONTENT GOES HERE -->
-<style>
+<!DOCTYPE html>
+<html lang="en">
 
-</style>
-<div class="col-12 title-box" style="background: #d44057;">
-    <h1 class="title-font">Apply as Model</h1>
-    <p class="content-title-small">
-        Model Application Guidelines
-    </p>
-    <br/>
-    <br/>
-</div>
-<div class="container" style="min-height: 1000px;top: 5vh;">
-    <div class="col-12">
-        <p class="content-text-application" style="text-align: left !important;">
-            Apply To Be A Model
-        </p>
-        <p class="content-text-application" style="text-align: left !important;">
-            We accept applications from anyone with physical or mental limitations regardless of age. Before applying, there are a few things that needs to be taken under consideration such as travelling at short notice, taking directions from others, flexible schedules,
-            etc.
-        </p>
+<head>
+    <title>Project Don</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#232b2b">
+    <link rel="shortcut icon" sizes="192x192" type="image/x-icon" href="assets/img/common/logo2/512.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,bold">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/plugin_override.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="assets/js/layout.js"></script>
+    <script>
+        var contentLoaderStart;
+
+        function loaderInitiate() {
+            console.log("initiate loader turn off 3secs");
+            contentLoaderStart = setTimeout(loadPage, 500);
+        }
+
+        function loadPage() {
+            document.getElementById("loaderBody").classList.remove('loaderFormat');
+            document.getElementById("contentLoader").style.display = "none";
+            document.getElementById("contentLoaderComplete").style.display = "block";
+        }
+    </script>
+</head>
+
+<body id="loaderBody" class="loaderFormat" onload="loaderInitiate()" style="margin:0;">
+    <div id="contentLoader" style=""></div>
+
+    <div style="display:none;" id="contentLoaderComplete" class="animate-bottom">
+        <!-- HEADER START -->
+        <div data-include="header" style="margin-bottom: 5vh;"></div>
+        <!--END HEADER -->
+        <!-- CONTENT GOES HERE -->
+        <div class="col-12 title-box" style="background: #d44057;">
+            <h1 class="title-font">Apply as Model</h1>
+            <p class="content-title-small">
+                Model Application Guidelines
+            </p>
+            <br/>
+            <br/>
+        </div>
+        <div class="container" style="min-height: 1000px;top: 5vh;">
+            <div class="col-12">
+                <p class="content-text-application" style="text-align: left !important;">
+                    Apply To Be A Model
+                </p>
+                <p class="content-text-application" style="text-align: left !important;">
+                    We accept applications from anyone with physical or mental limitations regardless of age. Before applying, there are a few things that needs to be taken under consideration such as travelling at short notice, taking directions from others, flexible schedules,
+                    etc.
+                </p>
+            </div>
+            <div class="col-12">
+                <p class="content-text-application" style="text-align: left !important;">
+                    Please send 4 or 5 photos (close-up, half body, and full body shot) and the following details;<br/>
+                    <span>&#8226; Full name</span><br/>
+                    <span>&#8226; Date of Birth</span><br/>
+                    <span>&#8226; Diagnosis</span><br/>
+                    <span>&#8226; Current location</span><br/>
+                    <span>&#8226; Experience or Achievements</span><br/>
+                    <span>&#8226; Talents</span><br/>
+                    <span>&#8226; Phone Number</span><br/>
+                </p>
+            </div>
+            <div class="col-12">
+                <p class="content-text-application" style="text-align: left !important;">
+                    It is important to fulfill the above requirements before emailing your application. Please note that we cannot guarantee who will be selected by our clients; however, we will try our best to find you bookings for modelling.
+                    <br/> <br/> If you have any questions, feel free to email us.
+                </p>
+            </div>
+            <br/>
+            <br/>
+        </div>
+        <!-- CONTENT END -->
+        <!-- FOOTER START-->
+        <div data-include="footer"></div>
+        <!-- FOOTER END-->
     </div>
-    <div class="col-12">
-        <p class="content-text-application" style="text-align: left !important;">
-            Please send 4 or 5 photos (close-up, half body, and full body shot) and the following details;<br/>
-            <span>&#8226; Full name</span><br/>
-            <span>&#8226; Date of Birth</span><br/>
-            <span>&#8226; Diagnosis</span><br/>
-            <span>&#8226; Current location</span><br/>
-            <span>&#8226; Experience or Achievements</span><br/>
-            <span>&#8226; Talents</span><br/>
-            <span>&#8226; Phone Number</span><br/>
-        </p>
-    </div>
-    <div class="col-12">
-        <p class="content-text-application" style="text-align: left !important;">
-            It is important to fulfill the above requirements before emailing your application. Please note that we cannot guarantee who will be selected by our clients; however, we will try our best to find you bookings for modelling.
-            <br/> <br/> If you have any questions, feel free to email us.
-        </p>
-    </div>
-    <br/>
-    <br/>
-</div>
-<!-- CONTENT END -->
-<!-- FOOTER START-->
-<div data-include="footer"></div>
-<!-- FOOTER END-->
+</body>
+
+</html>
