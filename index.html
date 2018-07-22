@@ -28,11 +28,86 @@
     <!-- iziModal MODAL DIALOG -->
     <link href="assets/plugins/iziModal/iziModal.min.css" rel="stylesheet" />
     <script src="assets/plugins/iziModal/iziModal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 5000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 </head>
 
-<body>
-    <div>
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader">
+        <h1 class="ml8">
+            <span class="letters-container" style="text-align: center;font-size:20px;">
+            <span class="letters letters-left">Project</span>
+            <span class="letters bang">DON</span>
+            </span>
+            <span class="circle circle-white"></span>
+            <span class="circle circle-dark"></span>
+            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+        </h1>
+        <script>
+            anime.timeline({
+                    loop: true
+                })
+                .add({
+                    targets: '.ml8 .circle-white',
+                    scale: [0, 3],
+                    opacity: [1, 0],
+                    easing: "easeInOutExpo",
+                    rotateZ: 360,
+                    duration: 1100
+                }).add({
+                    targets: '.ml8 .circle-container',
+                    scale: [0, 1],
+                    duration: 1100,
+                    easing: "easeInOutExpo",
+                    offset: '-=1000'
+                }).add({
+                    targets: '.ml8 .circle-dark',
+                    scale: [0, 1],
+                    duration: 1100,
+                    easing: "easeOutExpo",
+                    offset: '-=600'
+                }).add({
+                    targets: '.ml8 .letters-left',
+                    scale: [0, 1],
+                    duration: 1200,
+                    offset: '-=550'
+                }).add({
+                    targets: '.ml8 .bang',
+                    scale: [0, 1],
+                    rotateZ: [45, 15],
+                    duration: 1200,
+                    offset: '-=1000'
+                }).add({
+                    targets: '.ml8',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1400
+                });
+
+            anime({
+                targets: '.ml8 .circle-dark-dashed',
+                rotateZ: 360,
+                duration: 5000,
+                easing: "linear",
+                loop: true
+            });
+        </script>
+    </div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
         <!-- HEADER START -->
         <div data-include="header"></div>
         <!--END HEADER -->
@@ -123,11 +198,13 @@
         <!-- CONTENT GOES HERE -->
         <div id="content" class="page2" style="">
         </div>
+
+
+        <!-- CONTENT END -->
+        <!-- FOOTER START-->
+        <div data-include="footer"></div>
+        <!-- FOOTER END-->
     </div>
-    <!-- CONTENT END -->
-    <!-- FOOTER START-->
-    <div data-include="footer"></div>
-    <!-- FOOTER END-->
 </body>
 
 </html>
