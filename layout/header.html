@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/models.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/plugin_override.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
 </head>
 
 <body>
@@ -59,6 +60,19 @@
                 <div class="d-none d-xl-block col-lg-3 col-xl-3"></div>
             </div>
         </nav>
-
+        <!--SERVICE WORKER-->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function(err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
+            }
+        </script>
     </header>
     <!--END HEADER -->
