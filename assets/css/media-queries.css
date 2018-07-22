@@ -16,6 +16,13 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .mobile-border {
+        border-bottom: 3px solid #4c9cb8;
+    }
+    .main-model-section {
+        display: unset !important;
+        border: none !important;
+    }
     .content-text-application {
         font-size: 15px;
     }
@@ -69,6 +76,9 @@
 @media only screen and (max-width: 999px) {
     .tingle-modal-box {
         width: 100%;
+    }
+    .main-model-section {
+        display: unset !important;
     }
 }
 

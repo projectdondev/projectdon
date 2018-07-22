@@ -12,10 +12,7 @@ h1.ml8 {
 }
 
 
-/* --------------------------------- */
-
-
-/* Add animation to "page content" */
+/* --------------------------------- MAIN LANDING PAGE LOADER --------------------------*/
 
 #myDiv {
     display: none;
@@ -81,6 +78,62 @@ h1.ml8 {
 
 
 /* ------------------------------------------------ */
+
+
+/* //----------------------------------------------------CONTENT LOADER ----------------- */
+
+.loaderFormat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333333;
+}
+
+
+/* START: Loader css */
+
+#contentLoader {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+#contentLoader::after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes loading {
+    0%,
+    100% {
+        background-color: #FEDD00;
+        /* 1st dot */
+        box-shadow: 9px 0 0 #FE5000, /* 2nd dot */
+        18px 0 0 #FE5000;
+        /* 3rd dot */
+    }
+    33.3% {
+        background-color: #FE5000;
+        box-shadow: 9px 0 0 #FEDD00, 18px 0 0 #FE5000;
+    }
+    66.6% {
+        background-color: #FE5000;
+        box-shadow: 9px 0 0 #FE5000, 18px 0 0 #FEDD00;
+    }
+}
+
+
+/* //------------------------------------------------------------------------------------ */
 
 .don-background {
     background: url('../../assets/img/common/logo.jpg') no-repeat;
