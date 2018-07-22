@@ -1,21 +1,31 @@
 {
-  "short_name": "Project Don",
-  "name": "Project Don Management",
+  "short_name": "Project DON",
+  "name": "Project DON Management",
   "icons": [
     {
-      "src": "assets/img/common/favicon.ico",
-      "type": "icon/ico",
+      "src": "assets/img/common/logo2/48.png",
+      "type": "icon/png",
       "sizes": "48x48"
     },
     {
-       "src": "assets/img/common/favicon.ico",
-      "type": "icon/ico",
+     "src": "assets/img/common/logo2/96.png",
+      "type": "icon/png",
       "sizes": "96x96"
     },
     {
-      "src": "assets/img/common/favicon.ico",
-      "type": "icon/ico",
+       "src": "assets/img/common/logo2/128.png",
+      "type": "icon/png",
       "sizes": "192x192"
+    },
+	 {
+       "src": "assets/img/common/logo2/256.png",
+      "type": "icon/png",
+      "sizes": "256x256"
+    },
+	 {
+      "src": "assets/img/common/logo2/512.png",
+      "type": "icon/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "index.html?launcher=true",

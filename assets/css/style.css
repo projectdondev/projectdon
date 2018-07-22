@@ -3,19 +3,25 @@ body {
     background: #232b2b;
 }
 
+.don-background {
+    background: url('../../assets/img/common/logo.jpg') no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
 .title-font {
-    font-family: 'Open Sans';
+    font-family: 'Courgette', 'cursive';
     font-weight: 400;
     font-size: 60px;
-    margin: 49px auto auto auto;
-    padding: 20px;
+    margin: 49px auto 0px auto;
+    padding: 40px 0px 0px 0px;
     color: #fbfbfb;
     text-align: center;
 }
 
 .title-box {
     border-bottom: 3px solid #ccc;
-    background: darkseagreen;
     min-height: 200px;
 }
 
@@ -28,20 +34,36 @@ body {
 }
 
 .content-title {
-    font-family: 'Open Sans';
-    font-size: 30px;
+    font-weight: 700;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 33px;
     margin: auto;
     color: #fbfbfb;
-    text-align: center;
+    text-align: left;
 }
 
 .content-text {
+    border-top: 1px solid darkseagreen;
     font-family: 'Open Sans';
     font-size: 20px;
-    margin: 20px auto;
-    color: #fbfbfb;
+    margin: 0px auto 20px auto;
+    color: whitesmoke;
     text-align: center;
-    background: black;
+    background: #0e0e0ed9;
+    padding: 30px;
+    word-wrap: normal;
+    word-break: break-word;
+}
+
+.content-text-application {
+    border-top: 1px solid #d44057;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    margin: 0px auto 20px auto;
+    color: whitesmoke;
+    text-align: center;
+    background: #0e0e0ed9;
     padding: 30px;
     word-wrap: normal;
     word-break: break-word;

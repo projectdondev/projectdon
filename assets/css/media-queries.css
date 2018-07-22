@@ -16,6 +16,12 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .content-text-application {
+        font-size: 15px;
+    }
+    .don-background {
+        margin-top: -8vh;
+    }
     .navbar {
         background: transparent !important;
     }
