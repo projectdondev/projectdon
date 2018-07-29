@@ -40,16 +40,17 @@ function capitalizeFirstLetter(string) {
 }
 $("#modal").iziModal({
     title: '',
+    titleColor: '#2b2b2b',
     subtitle: '',
-    headerColor: '#4c9cb8',
-    background: null,
+    headerColor: '#fdb918',
+    background: '#232b2b',
     theme: '', // light
-    icon: null,
+    icon: 'fa fa-address-book',
     iconText: null,
-    iconColor: '',
+    iconColor: '#2b2b2b',
     rtl: false,
     width: 1000,
-    top: 20,
+    top: 0,
     bottom: null,
     borderBottom: true,
     padding: 0,

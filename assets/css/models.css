@@ -1,5 +1,13 @@
 /* MODEL DETAIL QUOTE AREA ------------------------------------------------------- */
 
+.model-detail-image-slider {
+    background: #232b2b !important;
+}
+
+.iziModal-header-title {
+    color: #2b2b2b !important;
+}
+
 blockquote {
     font-size: 1.4em;
     width: 100%;
