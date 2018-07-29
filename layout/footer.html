@@ -1,6 +1,13 @@
 <!-- FOOTER -->
 <div class="footer themecolor">
-    Copyright © 2018 Project DON
+    <p style="text-align: center"> Copyright © 2018 Project DON</p>
+    <!-- <div class="col-12 padd0" style="margin: auto;"> -->
+    <a href="https://www.facebook.com/projectdonmanagement/" class="facebook-follow fa fa-facebook" style="width:50px !important;text-align: right;">
+    </a>
+    <a href="https://www.instagram.com/projectdonmanagement/" class="instagram-follow fa fa-instagram" style="width:50px !important;text-align: right;">
+    </a>
+    <!-- </div> -->
+
 </div>
 <!-- END FOOTER -->
 <!-- JAVASCRIPT FILES -->
@@ -8,17 +15,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                // Registration was successful
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, function(err) {
-                // registration failed :(
-                console.log('ServiceWorker registration failed: ', err);
-            });
-        });
-    }
+    // if ('serviceWorker' in navigator) {
+    //     window.addEventListener('load', function() {
+    //         navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    //             // Registration was successful
+    //             console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    //         }, function(err) {
+    //             // registration failed :(
+    //             console.log('ServiceWorker registration failed: ', err);
+    //         });
+    //     });
+    // }
 </script>
 </body>
 
