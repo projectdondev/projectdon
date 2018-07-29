@@ -167,7 +167,8 @@ h1.ml8 {
     font-size: 60px;
     margin: 49px auto 0px auto;
     padding: 40px 0px 0px 0px;
-    color: #fbfbfb;
+    /* color: #fbfbfb; */
+    color: #FDB918;
     text-align: center;
 }
 
