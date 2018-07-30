@@ -31,9 +31,15 @@
             document.getElementById("contentLoaderComplete").style.display = "block";
         }
     </script>
+    <style>
+        body {
+            /* background: #272727 !important; */
+            background: #000000 !important;
+        }
+    </style>
 </head>
 
-<body id="loaderBody" class="loaderFormat" onload="loaderInitiate()" style="margin:0;">
+<body id="loaderBody" class="loaderFormat" onload="loaderInitiate()" style="margin:0;background: #000000 !important;">
     <div id="contentLoader" style=""></div>
 
     <div style="display:none;" id="contentLoaderComplete" class="animate-bottom">
@@ -42,7 +48,7 @@
         <!--END HEADER -->
         <!-- CONTENT GOES HERE -->
         <!--DESKTOP-->
-        <div class="col-12 title-box" style="background: #2d7452;">
+        <div class="col-12 title-box" style="background: #000000;">
             <h1 class="title-font">Contact Us</h1>
             <p class="content-title-small">
                 Talk to Us
@@ -133,12 +139,12 @@
                             <input placeholder="Contact Number" type="number" class="form-control contactme-form-input " value="" name="contact">
                         </div>
                         <div class="form-group" style="margin-bottom:10px !important;">
-                            <textarea rows="6" placeholder="Enter Message here" class="form-control contactme-form-input " name="message">
+                            <textarea rows="6" class="form-control contactme-form-input " name="message">
                                     </textarea>
                         </div>
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding: 5px 0px;">
-                            <button type="submit" class="btn btn-dark paddR0 OpenSansSemiBold" style="font-size: 16px;height: 40px;width: 150px;" name="submit">Contact Us
+                            <button type="submit" class="btn btn-dark OpenSansSemiBold" style="text-align:center;margin:auto;color:#2b2b2b;background:#fdb918;border:none;font-weight:700;font-size: 16px;height: 40px;width: 150px;" name="submit">Contact Us
                                     </button>
                         </div>
                     </form>
@@ -190,12 +196,12 @@
                             <input placeholder="Contact Number" type="number" class="form-control contactme-form-input " value="" name="contact">
                         </div>
                         <div class="form-group">
-                            <textarea rows="10" placeholder="Enter Message here" class="form-control contactme-form-input " name="message">
+                            <textarea rows="10" class="form-control contactme-form-input " name="message">
                     </textarea>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="padding-left: 0px;">
-                            <button type="submit" class="btn btn-dark paddR0 OpenSansSemiBold" style="font-size: 16px;height: 40px;width: 150px;" name="submit">Contact Us
+                            <button type="submit" class="btn btn-dark OpenSansSemiBold" style="text-align:center;margin:auto;color:#2b2b2b;background:#fdb918;border:none;font-weight:700;font-size: 16px;height: 40px;width: 150px;" name="submit">Contact Us
                             </button>
                             <br><br><br><br><br><br>
                         </div>

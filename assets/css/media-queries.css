@@ -17,7 +17,7 @@
 
 @media only screen and (max-width: 991px) {
     .mobile-border {
-        border-bottom: 3px solid #4c9cb8;
+        border-bottom: 3px solid #fdb918;
     }
     .main-model-section {
         display: unset !important;
@@ -51,7 +51,7 @@
     .title-box {
         top: -50px;
         padding-top: 20px;
-        border-bottom: 3px solid #ccc;
+        border-bottom: 3px solid #fdb918;
         background: darkseagreen;
         min-height: 200px;
     }

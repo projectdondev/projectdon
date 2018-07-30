@@ -1,11 +1,13 @@
 <!-- FOOTER -->
 <div class="footer themecolor">
-    <p style="text-align: center"> Copyright © 2018 Project DON</p>
+    <p style="text-align: center;margin:0px;display:inline-flex;"> Copyright ©</p>
+    <p id="appendCurrentYear" style="text-align: center;margin:0px;display:inline-flex;"></p>
+    <p style="text-align: center;margin:0px;display:inline-flex;">Project DON</p>
     <!-- <div class="col-12 padd0" style="margin: auto;"> -->
-    <a href="https://www.facebook.com/projectdonmanagement/" target="_blank" class="facebook-follow fa fa-facebook" style="width:50px !important;text-align: right;">
+    <!-- <a href="https://www.facebook.com/projectdonmanagement/" target="_blank" class="facebook-follow fa fa-facebook" style="width:50px !important;text-align: right;">
     </a>
     <a href="https://www.instagram.com/projectdonmanagement/" target="_blank" class="instagram-follow fa fa-instagram" style="width:50px !important;text-align: right;">
-    </a>
+    </a> -->
     <!-- </div> -->
 
 </div>
@@ -26,6 +28,10 @@
     //         });
     //     });
     // }
+
+    var Year = new Date();
+    Year = Year.getFullYear();
+    $("#appendCurrentYear").html(Year);
 </script>
 </body>
 

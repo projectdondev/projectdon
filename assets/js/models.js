@@ -43,7 +43,7 @@ $("#modal").iziModal({
     titleColor: '#2b2b2b',
     subtitle: '',
     headerColor: '#fdb918',
-    background: '#232b2b',
+    background: '#272727',
     theme: '', // light
     icon: 'fa fa-address-book',
     iconText: null,
