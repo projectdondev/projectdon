@@ -32,8 +32,7 @@
     var Year = new Date();
     Year = Year.getFullYear();
     $("#appendCurrentYear").html(Year);
-    
-    if(window.navigator && navigator.serviceWorker) {
+        if(window.navigator && navigator.serviceWorker) {
   navigator.serviceWorker.getRegistration()
   .then(function(registrations) {
     for(let registration of registrations) {

@@ -32,6 +32,18 @@ function triggerModalDetails(id) {
             modelTarget = "modals/nadeera.html";
             $('#modal').iziModal('open');
             return 0;
+        case "afiq":
+            modelTarget = "modals/afiq.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "nik":
+            modelTarget = "modals/nik.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "rachel":
+            modelTarget = "modals/rachel.html";
+            $('#modal').iziModal('open');
+            return 0;
     }
 }
 
