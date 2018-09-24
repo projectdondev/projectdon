@@ -44,6 +44,38 @@ function triggerModalDetails(id) {
             modelTarget = "modals/rachel.html";
             $('#modal').iziModal('open');
             return 0;
+        case "loga":
+            modelTarget = "modals/loga.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "lynda":
+            modelTarget = "modals/lynda.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "rocyie":
+            modelTarget = "modals/rocyie.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "lha":
+            modelTarget = "modals/lha.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "daniel":
+            modelTarget = "modals/daniel.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "ata":
+            modelTarget = "modals/ata.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "kimi":
+            modelTarget = "modals/kimi.html";
+            $('#modal').iziModal('open');
+            return 0;
+        case "siti":
+            modelTarget = "modals/siti.html";
+            $('#modal').iziModal('open');
+            return 0;
     }
 }
 
