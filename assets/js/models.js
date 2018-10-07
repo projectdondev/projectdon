@@ -138,9 +138,12 @@ $("#modal").iziModal({
     afterRender: function() {},
     onOpening: function(modal) {
         modal.startLoading();
-        $.get(modelTarget, function(data) {
-            $("#modal .iziModal-content").html(data);
-            $('#modal').iziModal('setTitle', capitalizeFirstLetter(getModelName));
+         $("#modal .iziModal-content").html(data);
+            if (getModelName === "lha") {
+                $('#modal').iziModal('setTitle', getModelName);
+            } else {
+                $('#modal').iziModal('setTitle', capitalizeFirstLetter(getModelName));
+            }
             modal.stopLoading();
         });
     }
