@@ -1,8 +1,12 @@
 var url = window.location.pathname;
-console.log(url);
 var arr = url.split(".html");
-console.log(arr[0]);
-
+$("#modelNavbarClick").click(function() {
+    if ($("#modelsPageNavbar").hasClass('collapse')) {
+        $("#modelsPageNavbar").removeClass('collapse');
+    } else {
+        $("#modelsPageNavbar").addClass('collapse');
+    }
+});
 // var url = window.location.toString();
 // window.location = url.replace(".html", "");
 // var mainUrl = arr[0].lastIndexOf('/');

@@ -1,5 +1,9 @@
 /* MODEL DETAIL QUOTE AREA ------------------------------------------------------- */
 
+#model-details {
+    text-align: left;
+}
+
 .model-detail-image-slider {
     background: #272727 !important;
 }
@@ -106,7 +110,8 @@ blockquote span {
 .modal_image_carousel {
     text-align: center;
     /* width: 500px; */
-    height: 100vh;
+    /* height: 100vh; */
+    max-height: 700px;
     margin: auto;
     object-fit: scale-down !important;
     object-position: center;
