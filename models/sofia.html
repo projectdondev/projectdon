@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Don Management | Specialist Talent Agency</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#232b2b">
+    <link rel="shortcut icon" sizes="192x192" type="image/x-icon" href="../assets/img/common/favicon.jpg" />
+    <!--MANIFEST-->
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,bold">
+    <link rel="stylesheet" href="../assets/css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/media-queries.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/models.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/plugin_override.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../assets/js/model-slider.js"></script>
+    <!-- PLUGINS -->
+    <!-- SLICK IMAGE SLIDER -->
+    <script type="text/javascript" src="../assets/plugins/slick/slick.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/slick/slick-theme.css" />
+    <script>
+        var contentLoaderStart;
+
+        function loaderInitiate() {
+            console.log("initiate loader turn off 3secs");
+            contentLoaderStart = setTimeout(loadPage, 500);
+        }
+
+        function loadPage() {
+            document.getElementById("loaderBody").classList.remove('loaderFormat');
+            document.getElementById("contentLoader").style.display = "none";
+            document.getElementById("contentLoaderComplete").style.display = "block";
+        }
+    </script>
+    <style>
+        .iziModal-content {
+            /* background: #022e3a; */
+            background: #272727;
+        }
+        
+        .iziModal-header-buttons {
+            background: black !important;
+            border-radius: 50px !important;
+        }
+        
+        body {
+            background: #000000 !important;
+        }
+        
+        @media only screen and (min-width: 991px) and (max-width: 1200px) {
+            .col-lg-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 33% !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="col-12 col-sm-12 padd0 " style="text-align: right">
+                <button id="modelNavbarClick" style="background: black !important;outline: none !important;" class="navbar-toggler"
+                    type="button" data-toggle="collapse" data-target="#modelsPageNavbar" aria-controls="modelsPageNavbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-reorder" style="color: #fdb918;background: black;font-size: 40px;"></span>
+                </button>
+            </div>
+            <script>
+                $("#modelNavbarClick").click(function () {
+                    if ($("#modelsPageNavbar").hasClass('collapse')) {
+                        $("#modelsPageNavbar").removeClass('collapse');
+                    } else {
+                        $("#modelsPageNavbar").addClass('collapse');
+                    }
+                });
+            </script>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12" style="display: flex;padding:0px;">
+                <div class="collapse navbar-collapse" id="modelsPageNavbar" style="margin:auto;">
+                    <ul class="navbar-nav mr-auto" style="margin:auto;">
+                        <li class="nav-item active">
+                            <a class="themecolor nav-link nav-font" href="../index.html">Don Management <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="themecolor nav-link nav-font" href="../about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="themecolor nav-link nav-font" href="../models.html">Models</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="themecolor nav-link nav-font" href="../application.html">Apply as Model</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="themecolor nav-link nav-font" href="../contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--END HEADER -->
+    <div class="col-12 title-box" style="background: #000000;">
+        <h1 class="title-font">Model</h1>
+        <p class="content-title-small">
+            Sofia Lovi Ramasamy
+        </p>
+        <br />
+        <br />
+    </div>
+    <div class="container">
+        <div id="model-slider-nav" style="margin:0 20px;">
+            <div data-include="model-slider"></div>
+        </div>
+
+        <div class="col-12" style="text-align:left;background: #272727;">
+            <!-- ================== MODEL CONTENT GOES HERE ====================== -->
+            <!--DESKTOP-->
+            <div id="model-details" style="" class="col-md-12 col-lg-12 contactme-form d-none d-lg-block paddB10">
+                <div class="col-md-12 col-lg-12 col-xl-12" style="padding: 20px;margin-top: 50px;">
+                    <div class="col-lg-12 col-xl-12" style="display: inline-flex;padding:0px;border-bottom:4px solid #ccc;">
+                        <div class="col-lg-5 col-xl-5" style="max-height:500px;max-width: 500px;">
+                            <img class="" style="max-height: 95%;overflow: hidden;" src="../assets/img/models/Sofia/1.jpg" />
+                        </div>
+                        <div class="col-lg-7 col-xl-7" style="">
+                            <div class="col-lg-12 col-xl-12">
+                                <label class="padd0 col-12 modal_detail_title">Name</label>
+                                <p class="modal_detail_text">Sofia Lovi Ramasamy</p>
+                            </div>
+                            <div class="col-lg-12 col-xl-12">
+                                <label class="padd0 col-12 modal_detail_title">Hobbies</label>
+                                <p class="modal_detail_text">
+                                    Reading books and Travelling
+                                </p>
+                            </div>
+                            <div class="col-lg-12 col-xl-12">
+                                <label class="padd0 col-12 modal_detail_title">Achievement</label>
+                                <p class="modal_detail_text">
+                                    Created many awareness to public & finalist for Miss Amazing Malaysia 2019
+                                </p>
+                            </div>
+                            <div class="col-lg-12 col-xl-12">
+                                <label class="padd0 col-12 modal_detail_title">Diagnosis</label>
+                                <p class="modal_detail_text">Psoriatic Arthritis & Fibromyalgia Syndrom</p>
+                            </div>
+                            <div class="col-lg-12 col-xl-12 model_description_group">
+                                <div class="col-3">
+                                    <label class="padd0 col-12 modal_detail_title">Age</label>
+                                    <p class="modal_detail_text">38 Years</p>
+                                </div>
+                                <div class="col-3">
+                                    <label class="padd0 col-12 modal_detail_title">DOB</label>
+                                    <p class="modal_detail_text">12/12/1979</p>
+                                </div>
+                                <div class="col-3">
+                                    <label class="padd0 col-12 modal_detail_title">Clothing</label>
+                                    <p class="modal_detail_text">M</p>
+                                </div>
+
+                                <div class="col-3">
+                                    <label class="padd0 col-12 modal_detail_title">Shoe size</label>
+                                    <p class="modal_detail_text">9</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-12 model_description_group">
+                                <div class="col-3">
+                                    <label class="padd0 col-12 modal_detail_title">Height</label>
+                                    <p class="modal_detail_text">165 cm</p>
+                                </div>
+                                <div class="col-3">
+                                    <label class="padd0 col-12 modal_detail_title">Hair</label>
+                                    <p class="modal_detail_text">Dark Brown </p>
+                                </div>
+                                <div class="col-3">
+                                    <label class="padd0 col-12 modal_detail_title">Eyes</label>
+                                    <p class="modal_detail_text">Brown </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-12" style="border-bottom:4px solid #ccc">
+                        <!-- <p class="modal_detail_text modal_detail_summary"> -->
+                        <blockquote>
+                            She’s a combination of both beauty and brains. Welcoming Sofia o board the DON family! A
+                            courageous, kind and loving woman, Sofia believes as long as there is perseverance and
+                            resilience within us, we can all reach great heights!
+                        </blockquote>
+                        <!-- </p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODEL IMAGE SLIDER -->
+            <div class="col-12">
+                <style>
+                    .slick-list draggable {
+                        width: 100% !important;
+                    }
+                </style>
+                <div class="model-detail-image-slider" style="display:flex;background:#022e3a;max-height:1200px;">
+                    <div><img style="object-fit: cover;" src="../assets/img/models/Sofia/1.jpg" class="modal_image_carousel "
+                            alt="Image1"></div>
+                    <div><img style="object-fit: cover;" src="../assets/img/models/Sofia/2.jpg" class="modal_image_carousel "
+                            alt="Image1"></div>
+                    <div><img style="object-fit: cover;" src="../assets/img/models/Sofia/3.jpg" class="modal_image_carousel "
+                            alt="Image1"></div>
+                    <div><img style="object-fit: cover;" src="../assets/img/models/Sofia/4.jpg" class="modal_image_carousel "
+                            alt="Image1"></div>
+                    <div><img style="object-fit: cover;" src="../assets/img/models/Sofia/5.jpg" class="modal_image_carousel "
+                            alt="Image1"></div>
+                    <div><img style="object-fit: cover;" src="../assets/img/models/Sofia/6.jpg" class="modal_image_carousel "
+                            alt="Image1"></div>
+                    <div><img style="object-fit: cover;" src="../assets/img/models/Sofia/7.jpg" class="modal_image_carousel "
+                            alt="Image1"></div>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('.model-detail-image-slider').slick({
+                            accessibility: true,
+                            adaptiveHeight: true,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            arrows: true,
+                        });
+                    });
+                </script>
+            </div>
+            <!--MOBILE -->
+            <div class="col-12 contactme-form d-block d-lg-none">
+                <div class="col-12">
+                    <label class="padd0 col-12 modal_detail_title">Name</label>
+                    <p class="modal_detail_text">Sofia Lovi Ramasamy</p>
+                </div>
+                <div class="col-12">
+                    <label class="padd0 col-12 modal_detail_title">Hobbies</label>
+                    <p class="modal_detail_text">
+                        Reading books and Travelling
+                    </p>
+                </div>
+                <div class="col-12">
+                    <label class="padd0 col-12 modal_detail_title">Achievement</label>
+                    <p class="modal_detail_text">
+                        Created many awareness to public & finalist for Miss Amazing Malaysia 2019
+                    </p>
+                </div>
+                <div class="col-12">
+                    <label class="padd0 col-12 modal_detail_title">Diagnosis</label>
+                    <p class="modal_detail_text">Psoriatic Arthritis & Fibromyalgia Syndrom</p>
+                </div>
+                <div class="col-12 model_description_group">
+                    <div class="col-6">
+                        <label class="padd0 col-12 modal_detail_title">Age</label>
+                        <p class="modal_detail_text">38 Years</p>
+                    </div>
+                    <div class="col-6">
+                        <label class="padd0 col-12 modal_detail_title">DOB</label>
+                        <p class="modal_detail_text">12/12/1979</p>
+                    </div>
+                </div>
+                <div class="col-12 model_description_group">
+                    <div class="col-6">
+                        <label class="padd0 col-12 modal_detail_title">Clothing</label>
+                        <p class="modal_detail_text">M</p>
+                    </div>
+
+                    <div class="col-6">
+                        <label class="padd0 col-12 modal_detail_title">Shoe size</label>
+                        <p class="modal_detail_text">9</p>
+                    </div>
+                </div>
+                <div class="col-12 model_description_group">
+                    <div class="col-6">
+                        <label class="padd0 col-12 modal_detail_title">Height</label>
+                        <p class="modal_detail_text">165 cm</p>
+                    </div>
+                    <div class="col-6">
+                        <label class="padd0 col-12 modal_detail_title">Hair</label>
+                        <p class="modal_detail_text">Dark Brown </p>
+                    </div>
+                </div>
+                <div class="col-12 model_description_group">
+                    <div class="col-6">
+                        <label class="padd0 col-12 modal_detail_title">Eyes</label>
+                        <p class="modal_detail_text">Brown </p>
+                    </div>
+                </div>
+                <div class="col-12" style="">
+                    <blockquote>
+                        She’s a combination of both beauty and brains. Welcoming Sofia o board the DON family! A
+                        courageous, kind and loving woman, Sofia believes as long as there is perseverance and
+                        resilience within us, we can all reach great heights!
+                    </blockquote>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+        <!-- ================== MODEL CONTENT GOES HERE ====================== -->
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer themecolor">
+        <p style="text-align: center;margin:0px;display:inline-flex;"> Copyright ©</p>
+        <p id="appendCurrentYear" style="text-align: center;margin:0px;display:inline-flex;"></p>
+        <p style="text-align: center;margin:0px;display:inline-flex;">Don Management</p>
+    </div>
+    <!-- END FOOTER -->
+    <script>
+        var Year = new Date();
+        Year = Year.getFullYear();
+        $("#appendCurrentYear").html(Year);
+    </script>
+</body>
